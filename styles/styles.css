@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 body{
     font-family: "Manrope";
+    background-color: rgba(218, 177, 210, 0.336);
 }
 *{
     margin: 0;
@@ -16,7 +17,11 @@ h3{
     font-size: 2.8rem;
     font-weight: 800;
 }
-
+h5{
+    color: rgb(28, 28, 28);
+    font-size: 1.6rem;
+    font-weight: 800;
+}
 /*header*/
 header{
     width: 80%;
@@ -25,6 +30,7 @@ header{
     margin-top: 60px;
     /* border: 2px solid red; */
     display: flex;
+    margin-bottom: 80px;
 }
 .header-left{
     width: 50%;
@@ -71,7 +77,7 @@ header button{
     box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.644);
     background: rgb(255, 255, 255);
     display: flex;
-    gap: 30px;
+    gap: 10px;
     align-items: center;
     position: absolute;
     bottom: 20%;
@@ -79,7 +85,10 @@ header button{
 }
 .rate-left{
     color: gold;
+    font-size: 32px;
+    margin-left: 10px;
 }
+
 .rate-right{
     display: flex;
     flex-direction: column;
@@ -95,12 +104,10 @@ header button{
     font-size: 1rem;
     font-weight: 600;
     margin-top: 0px;
-    width: 100%;
+    width: 150px;
 }
 /*main*/
-main{
-    margin-top: 80px;
-}
+
 /*feature section*/
 .featured-container{
     width: 80%;
@@ -110,6 +117,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    margin-bottom: 80px;
 }
 .featured-titles{
     height: 150px;
@@ -149,13 +157,80 @@ main{
     text-align: center;
     align-items: center;
 }
-.tea-card h5{
-    color: rgb(28, 28, 28);
-    font-size: 1.6rem;
-    font-weight: 800;
-}
 .tea-card p{
     width: 90%;
+}
+/*great sec*/
+.great-container{
+    /* height: 520px; */
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.great-left{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+}
+.left1-dsn{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid purple; */
+    
+}
+.leftup{
+    width: 238px;
+    height: 136px;
+    transform: rotate(-180.00deg);
+    border-radius: 10px;
+    background: linear-gradient(270.00deg, rgba(255, 0, 0, 0.548) 0%,rgba(255, 56, 212, 0.603) 100%);
+}
+.leftdown{
+    width: 238px;
+    height: 355.28px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.041);
+    background: rgba(127, 247, 7, 0.438);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.leftup2{
+    width: 238px;
+    height: 355.28px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.041);
+    background: linear-gradient(270.00deg, rgba(255, 0, 0, 0.281) 0%,rgba(255, 56, 212, 0.548) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftdown2{
+    width: 238px;
+    height: 136px;
+    transform: rotate(-180.00deg);
+    border-radius: 10px;
+    background: rgba(137, 253, 21, 0.575);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.041);
+    margin-top: 25px;
+}
+.left2-dsn{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid rgb(206, 79, 100); */
+}
+.great-right{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.great-right h3{
+    margin-top: -15px;
 }
 /*responsive for mobile*/
 @media screen and (max-width: 576px) {
@@ -230,5 +305,29 @@ main{
         width: 90%;
         font-size: .8rem;
     }
-    
+    /*great sec*/
+    .great-container{
+        flex-direction: column-reverse;
+    }
+    .great-right{
+        width: 100%;
+        gap: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .great-right h3{
+        font-size: 1.8rem;
+    }
+    .great-right h5{
+        font-size: 1rem;
+    }
+    .great-right p{
+        font-size: .7rem;
+    }
+    .great-left{
+        width: 100%;
+    }
+    .leftup,.leftdown,.leftup2,.leftdown2{
+        width: 160px;
+    }
 }
