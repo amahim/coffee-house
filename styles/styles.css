@@ -166,6 +166,7 @@ header button{
     width: 80%;
     margin: 0 auto;
     display: flex;
+    margin-bottom: 100px;
 }
 .great-left{
     width: 50%;
@@ -232,6 +233,61 @@ header button{
 .great-right h3{
     margin-top: -15px;
 }
+/*news container*/
+.news-container{
+    width: 80%;
+    /* height: 600px; */
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+.news-main{
+    /* height: 500px; */
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.news-titles{
+    height: 140px;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+.news-card{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 95%;
+    border: 2px solid gray;
+    gap: 15px;
+    border-radius: 16px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 3px;
+}
+.news-card img{
+    border-radius: 16px;
+}
+.news-card h5{
+    color: rgb(28, 28, 28);
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+.news-card h6{
+    color: rgb(28, 28, 28);
+    font-size: 1rem;
+}
+
+
+
+
+
+
 /*responsive for mobile*/
 @media screen and (max-width: 576px) {
     header{
@@ -264,9 +320,10 @@ header button{
         margin-left: 0px;
     }
     .header-rating{
-        bottom: -100%;
+        display: none;
+       /* bottom: -100%;
         left: 42%;
-        margin-bottom: 50px;
+        margin-bottom: 50px; */
     }
     /*feature section*/
     .featured-container{
@@ -281,7 +338,7 @@ header button{
         font-size: 1.8rem;
     }
     .featured-titles p{
-        font-size: .8rem;
+        font-size: .7rem;
         width: 100%;
     }
     .featured-main{
@@ -308,6 +365,7 @@ header button{
     /*great sec*/
     .great-container{
         flex-direction: column-reverse;
+        margin-bottom: 60px;
     }
     .great-right{
         width: 100%;
@@ -340,4 +398,27 @@ header button{
         height: 75%;
         width: 60%;
     }
+    /*news container*/
+    .news-container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 60px;
+    }
+    .news-main{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .news-titles{
+        height: auto;
+        gap: 10px;
+    }
+    .news-titles h3{
+        font-size: 1.8rem;
+    }
+    .news-titles p{
+        font-size: .7rem;
+        width: 100%;
+    }
+    
 }
