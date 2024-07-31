@@ -330,4 +330,14 @@ header button{
     .leftup,.leftdown,.leftup2,.leftdown2{
         width: 160px;
     }
+    .leftup,.leftdown2{
+        height: 120px;
+    }
+    .leftdown,.leftup2{
+        height: 200px;
+    }
+    .leftdown img,.leftup2 img{
+        height: 75%;
+        width: 60%;
+    }
 }
