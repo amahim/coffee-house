@@ -521,23 +521,18 @@ header button{
     /*reviews sec edit*/
     .review-container{
         height: 700px;
+        /* height: auto; */
         flex-direction: column;
     }
     .rev-left{
         width: 100%;
-        height: auto;
-        /* border: 2px solid blue; */
-        /* margin-left: 20px; */
-        /* padding: 40px 0px 40px 20px; */
         margin-top: 20px;
         gap: 10px;
         margin-left: 20px;
-        
     }
     .rev-left h3{
         margin-top: 20px;
         font-size: 1.6rem;
-        width: 100%;
     }
     .rev-left p{
         width: 90%;
@@ -551,8 +546,6 @@ header button{
     }
     .rev-right{
         width: 100%;
-        height: auto;
-        /* border: 2px solid yellow; */
         margin-bottom: 30px;
     }
     .rev-card{
@@ -577,10 +570,10 @@ header button{
         margin-left: 50px;
     }
     .rev-up{
-        padding: 50px 80px;
+        padding: 10px 0px 0px 70px;
     }
     .rev-pop{
-        top: 85%;
+        top: 30%;
         left: 5%;
     }
 
