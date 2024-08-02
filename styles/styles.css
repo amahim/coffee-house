@@ -282,7 +282,105 @@ header button{
     color: rgb(28, 28, 28);
     font-size: 1rem;
 }
-
+/*reviews sec edit*/
+.review-container{
+    width: 80%;
+    height: 550px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    display: flex;
+    border-radius: 10px;
+    background: linear-gradient(270.00deg, rgb(255, 0, 191) 0%,rgb(162, 0, 255) 100%);
+}
+.rev-left{
+    width: 45%;
+    height: 70%;
+    /* border: 2px solid blue; */
+    /* margin-left: 20px; */
+    /* padding: 40px 0px 40px 20px; */
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 40px;
+    
+}
+.rev-left h3{
+    margin-top: 40px;
+    font-size: 2.3rem;
+}
+.rev-left p{
+    color: rgb(24, 24, 24);
+    margin-bottom: 30px;
+    width: 90%;
+}
+.rev-left button{
+    width: 139px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: blueviolet;
+}
+.rev-right{
+    width: 55%;
+    height: 85%;
+    /* border: 2px solid yellow; */
+    margin-bottom: 30px;
+}
+.rev-card{
+    border: 1px solid rgba(209, 5, 165, 0.438);
+    height: 150px;
+    width: 400px;
+    background-color: white;
+    border-radius: 18px;
+}
+.rev-pp img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.rev-intro h6{
+    font-size: 1.2rem;
+}
+.rev-intro p{
+    font-size: .8rem;
+    color: rgb(41, 41, 41);
+}
+.rev-cmnt p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+.rev-cmnt{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.rev-info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.rev-up{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 105px 0px 0px 100px;
+    opacity: 0.5;
+}
+.rev-pop{
+    position: relative;
+    top: 45%;
+    left: 5%;
+    border-radius: 18px;
+    box-shadow: 4px 5px 10px purple;
+    margin-right: 150px;
+}
 
 
 
@@ -420,5 +518,71 @@ header button{
         font-size: .8rem;
         width: 100%;
     }
+    /*reviews sec edit*/
+    .review-container{
+        height: 700px;
+        flex-direction: column;
+    }
+    .rev-left{
+        width: 100%;
+        height: auto;
+        /* border: 2px solid blue; */
+        /* margin-left: 20px; */
+        /* padding: 40px 0px 40px 20px; */
+        margin-top: 20px;
+        gap: 10px;
+        margin-left: 20px;
+        
+    }
+    .rev-left h3{
+        margin-top: 20px;
+        font-size: 1.6rem;
+        width: 100%;
+    }
+    .rev-left p{
+        width: 90%;
+        font-size: .8rem;
+    }
+    .rev-left button{
+        margin-top: -10px;
+        width: 129px;
+        height: 46px;
+        font-size: 1rem;
+    }
+    .rev-right{
+        width: 100%;
+        height: auto;
+        /* border: 2px solid yellow; */
+        margin-bottom: 30px;
+    }
+    .rev-card{
+        height: 150px;
+        width: 250px;
+    }
+    .rev-pp img{
+        width: 30px;
+        height: 30px;
+    }
+    .rev-intro h6{
+        font-size: 1rem;
+    }
+    .rev-intro p{
+        font-size: .7rem;
+    }
+    .rev-cmnt p {
+        font-size: .8rem;
+    }
+    .rev-cmnt{
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .rev-up{
+        padding: 50px 80px;
+    }
+    .rev-pop{
+        top: 85%;
+        left: 5%;
+    }
+
 
 }
